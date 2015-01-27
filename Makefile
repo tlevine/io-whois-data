@@ -1,5 +1,5 @@
 io-whois.csv: ~/.io-whois
-	io-whois | sort -t, -k2 > io-whois.csv
+	io-whois | sort --field-separator=, -key=2 --human-numeric-sort
 
 ~/.io-whois:
 	cd
